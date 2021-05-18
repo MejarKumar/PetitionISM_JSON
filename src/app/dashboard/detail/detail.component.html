@@ -1,0 +1,37 @@
+<div class="full-screen">
+    <div class="container">
+      <!-- <h1 id="petitionlist-header">Petition List</h1><hr> -->
+  </div>
+  <div class="container" *ngFor="let item of collection">
+  
+  
+  <mat-card class="example-card" *ngIf="item.id==searched_id" >
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{item.PetitionTitle}}</mat-card-title>
+      <mat-card-subtitle style="color:burlywood;">@{{item.PetitionTagedAuthority}}</mat-card-subtitle>
+    </mat-card-header>
+    
+    <mat-card-content>
+     
+      <p>
+        {{item.PetitionDescription}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+  
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+    
+    </mat-card-actions>
+  </mat-card>
+  </div>
+  </div>

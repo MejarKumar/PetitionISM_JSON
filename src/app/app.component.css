@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300;500&display=swap');
+#screen{
+    background: gray;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+#navbartext{
+    font-family: 'Itim', cursive;
+    font-size: 2rem;
+    color: rgb(192 191 246);
+    margin-left: 10rem;
+}
+#navlinktext{
+    /* font-family: 'Baloo 2', cursive; */
+/* font-family: 'Itim', cursive; */
+font-family: 'KoHo', sans-serif;
+    margin: 15px;
+    font-size: 23px;
+    text-decoration: none;
+    color: azure;
+
+}
+#navlinktext:hover{
+    color: aquamarine;
+}
+.mat-toolbar.mat-primary{
+    background: #323960;
+    color: #3c9bfd;
+    height: 5.1rem;
+}
+
+
+
+
+mat-sidenav-container{
+    height: 100%;
+
+}
+mat-sidenav,mat-sidenav-content{
+    padding: 13px;
+    /* background: turquoise; */
+    height: auto;
+    display: block;
+    position: fixed;
+}
+mat-sidenav{
+    background:rgb(68, 68, 110);
+    width: 20rem;
+    display: block;
+    left: 0px;
+    top: 5.1rem;
+}
+.side-list{
+    /* background-color: royalblue; */
+    /* width: 100%; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+   flex-direction: column;
+   font-family: 'Itim', cursive;
+   align-items: end;
+}
+
+.side-list li{
+list-style: none;
+/* padding: 14px 27px; */
+margin: 5px 0px;
+}
+
+.side-list li a{
+text-decoration: none;
+color: seashell;
+font-size: 20px;
+}
+.side-list li a:hover{
+    cursor: pointer;
+    color: rgb(34, 243, 86);
+    border-radius: 33px ;
+}
+#moreBtn{
+    display: block;
+    /* left: 89rem;*/
+} 
+.fa{
+    color: #ede8e2;
+    size: 2rem;
+    margin: 0.5rem;
+}
+.footer-section{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    background: rgb(16, 17, 17);
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    color: darkgrey;
+    font-size: 1rem;
+}

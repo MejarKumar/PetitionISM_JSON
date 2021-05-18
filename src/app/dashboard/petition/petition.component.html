@@ -1,0 +1,72 @@
+<div class="container">
+    <h4 id="petition-header">Write Your Petition</h4>
+
+
+    <mat-card id="matcard">
+<form [formGroup]="addPetition" (ngSubmit)="CreatePetition()">
+    <div class="write-petition-container">
+           
+        <div class="petition-box">
+            <h2>Write Your Petition Title</h2>
+        </div>
+      
+        <mat-form-field appearance="outline">
+    <mat-label>Input</mat-label>
+    <input formControlName="PetitionTitle" matInput>
+  </mat-form-field>
+    </div>
+    <div class="container">
+        <h3 style="color: brown;">Note*</h3>
+        <h3>This is the first thing people will see about your petition. Get their attention
+            with a short
+            title that focusses on the change you’d like them to support. </h3>
+    </div><hr>
+
+    <div class="write-petition-container">
+        <div class="petition-box">
+            <h2>Tag Concerned Authority</h2>
+        </div>
+  <mat-form-field appearance="outline">
+    <mat-label>Select</mat-label>
+    <mat-select formControlName="PetitionTagedAuthority">
+     <ng-container *ngFor="let TagAuthority of PetitionTagedAuthorities">
+            <mat-option value="{{TagAuthority.id}}">{{TagAuthority.value}} </mat-option>
+
+        </ng-container>
+    </mat-select>
+  </mat-form-field>
+    </div>
+    <div class="container">
+        <h3 style="color: brown;">Note*</h3>
+        <h3>Choose the Authority of your petition. He has the power to solve your problem or
+            take the action
+            you’re demanding.</h3>
+    </div>
+    <hr>
+    <div class="write-petition-container">
+        <div class="petition-box">
+            <h2>Tag Concerned Authority</h2>
+        </div>
+  <mat-form-field appearance="outline">
+    <mat-label>Textarea</mat-label>
+    <textarea formControlName="PetitionDescription"  matInput></textarea>
+  </mat-form-field>
+    </div>
+    <div class="container">
+        <h3 style="color: brown;">Note*</h3>
+        <h3>People/students are more likely to support your petition if it’s clear why you care.
+            Explain
+            how
+            this change will impact you.</h3>
+    </div>
+    <hr>
+
+    <div class="secbtn-container">
+
+  <button mat-raised-button color="warn" >Clear</button>
+  <button type="submit" mat-raised-button color="primary" >Submit</button>
+    </div>
+</form>
+</mat-card>
+</div>
+

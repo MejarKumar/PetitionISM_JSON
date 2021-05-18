@@ -1,0 +1,43 @@
+/* :host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+   */
+   .container{
+    display: block;
+    margin: 0rem 10rem 0rem 10rem;
+   }
+
+   #matcard{
+    background: rgb(247, 234, 218);
+}
+#petition-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Itim';
+    padding: 3rem;
+    color: #65f436;
+    background: #1d4b4b;
+    font-family: 'Texturina', serif;
+  }
+  .petition-box{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+.secbtn-container{
+  display: flex;
+  justify-content: space-around;
+}
+.write-petition-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 30rem;
+  
+  }
