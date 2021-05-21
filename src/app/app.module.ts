@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms'
 import {HttpClientModule} from '@angular/common/http'
+import {ShareModule} from 'ngx-sharebuttons'
+import {ShareButtonsModule} from 'ngx-sharebuttons/buttons'
+import {ShareIconsModule} from 'ngx-sharebuttons/icons'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 
  // module for material
  import {MatSidenavModule} from '@angular/material/sidenav'
@@ -35,7 +40,14 @@ import { MatIconModule} from '@angular/material/icon'
     MatSidenavModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ShareButtonsModule.withConfig({
+      debug:true,
+    }),
+    ShareIconsModule,
+    ShareModule,
+    FontAwesomeModule,
+    LoadingBarRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

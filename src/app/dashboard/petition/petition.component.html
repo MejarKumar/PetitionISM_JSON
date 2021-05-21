@@ -1,3 +1,5 @@
+<ngx-loading-bar [height]="'6px'" [color]="'green'" [includeSpinner]="false"></ngx-loading-bar>
+
 <div class="container">
     <h4 id="petition-header">Write Your Petition</h4>
 
@@ -12,7 +14,7 @@
       
         <mat-form-field appearance="outline">
     <mat-label>Input</mat-label>
-    <input formControlName="PetitionTitle" matInput>
+    <input formControlName="PetitionTitle" matInput required>
   </mat-form-field>
     </div>
     <div class="container">
@@ -28,7 +30,7 @@
         </div>
   <mat-form-field appearance="outline">
     <mat-label>Select</mat-label>
-    <mat-select formControlName="PetitionTagedAuthority">
+    <mat-select formControlName="PetitionTagedAuthority"  required>
      <ng-container *ngFor="let TagAuthority of PetitionTagedAuthorities">
             <mat-option value="{{TagAuthority.id}}">{{TagAuthority.value}} </mat-option>
 
@@ -49,7 +51,7 @@
         </div>
   <mat-form-field appearance="outline">
     <mat-label>Textarea</mat-label>
-    <textarea formControlName="PetitionDescription"  matInput></textarea>
+    <textarea formControlName="PetitionDescription"  matInput required></textarea>
   </mat-form-field>
     </div>
     <div class="container">
@@ -63,8 +65,9 @@
 
     <div class="secbtn-container">
 
-  <button mat-raised-button color="warn" >Clear</button>
-  <button type="submit" mat-raised-button color="primary" >Submit</button>
+  <button mat-raised-button color="warn" (click)="stopLoading()" >Clear</button>
+  <a routerLink="/petitionlist">
+  <button type="submit" mat-raised-button color="primary" (click)="startLoading()"  required >Submit</button></a>
     </div>
 </form>
 </mat-card>

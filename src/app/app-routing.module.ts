@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AcademicinfoComponent } from './dashboard/academicinfo/academicinfo.component';
 import { DetailComponent } from './dashboard/detail/detail.component';
 import { HomeComponent } from './dashboard/home/home.component';
 import { PetitionComponent } from './dashboard/petition/petition.component';
@@ -14,6 +15,9 @@ const routes: Routes = [
 },
 {
   path:"home", component:HomeComponent
+},
+{
+  path:"academicinfo", component:AcademicinfoComponent
 },
 {
   path:"detail/:id", component:DetailComponent

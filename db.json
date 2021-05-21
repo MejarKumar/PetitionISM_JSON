@@ -31,12 +31,6 @@
       "id": 7
     },
     {
-      "name": "MOTARAM",
-      "address": "Patna",
-      "email": "motaramxyz@gmail.com",
-      "id": 8
-    },
-    {
       "PetitionTitle": "very haed",
       "PetitionTagedAuthority": "Hostel",
       "PetitionDescription": "vfswehbn",
@@ -53,6 +47,25 @@
       "PetitionTagedAuthority": "Hostel",
       "PetitionDescription": "hostel life is very  enjoyful.Choose the Authority of your petition. He has the power to solve your problem or take the action you’re demanding.Choose the Authority of your petition. He has the power to solve your problem or take the action you’re demanding.Choose the Authority of your petition. He has the power to solve your problem or take the action you’re demanding.Choose the Authority of your petition. He has the power to solve your problem or take the action you’re demanding.Choose the Authority of your petition. He has the power to solve your problem or take the action you’re demanding.Choose the Authority of your petition. He has the power to solve your problem or take the action you’re demanding.Choose the Authority of your petition. He has the power to solve your problem or take the action you’re demanding.Choose the Authority of your petition. He has the power to solve your problem or take the action you’re demanding.",
       "id": 11
+    },
+    {
+      "PetitionTitle": "very cute",
+      "PetitionTagedAuthority": "Library",
+      "PetitionDescription": "very cute library",
+      "id": 13
+    },
+    {
+      "PetitionTitle": "welcome",
+      "PetitionTagedAuthority": "Sports",
+      "PetitionDescription": "welcome to the sports club",
+      "id": 15
+    },
+  
+    {
+      "PetitionTitle": "jasper",
+      "PetitionTagedAuthority": "Hostel",
+      "PetitionDescription": "this is for 1st year.",
+      "id": 26
     }
   ]
 }
